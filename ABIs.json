@@ -1,0 +1,103 @@
+[
+    {
+      "name": "Swap",
+      "type": "event",
+      "anonymous": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "sender",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "amount0In",
+          "indexed": false
+        },
+        {
+          "type": "uint256",
+          "name": "amount1In",
+          "indexed": false
+        },
+        {
+          "type": "uint256",
+          "name": "amount0Out",
+          "indexed": false
+        },
+        {
+          "type": "uint256",
+          "name": "amount1Out",
+          "indexed": false
+        },
+        {
+          "type": "address",
+          "name": "to",
+          "indexed": true
+        }
+      ]
+    },
+    {
+      "name": "Swap",
+      "type": "event",
+      "anonymous": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "sender",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "recipient",
+          "indexed": true
+        },
+        {
+          "type": "int256",
+          "name": "amount0",
+          "indexed": false
+        },
+        {
+          "type": "int256",
+          "name": "amount1",
+          "indexed": false
+        },
+        {
+          "type": "uint160",
+          "name": "sqrtPriceX96",
+          "indexed": false
+        },
+        {
+          "type": "uint128",
+          "name": "liquidity",
+          "indexed": false
+        },
+        {
+          "type": "int24",
+          "name": "tick",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "name": "Transfer",
+      "type": "event",
+      "anonymous": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "from",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "to",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "value",
+          "indexed": false
+        }
+      ]
+    }
+  ]
