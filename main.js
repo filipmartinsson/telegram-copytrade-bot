@@ -16,7 +16,7 @@ await Moralis.start({apiKey: moralisAPIKey})
 app.post("/webhook", async (req, res) => {
     const webhookBody = req.body;
     res.status(200).send();
-    if(webhookBody.logs.length > 0){
+    if(webhookBody.logs.length > 0 && !webhookBody.confirmed){
         const decodedLogs = Moralis.Streams.parsedLogs(webhookBody);
         const addresses = getInvolvedAddresses(webhookBody.logs);
         const fromData = getFromData(webhookBody.erc20Transfers, addresses);
